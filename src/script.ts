@@ -9,9 +9,14 @@ const person = {
     age: 35,
     isDeveloper: true
 }
-
+main("Dolon")
 const roll: number = 45;
 
-console.log(person, roll)
+// typescript array typing 
 
-main("Dolon Chandra Roy");
+let a: (number | string)[] = [];
+
+a.push(5);
+a.push("Hello dolon!");
+
+console.log(a);

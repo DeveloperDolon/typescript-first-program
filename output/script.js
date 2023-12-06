@@ -7,6 +7,10 @@ const person = {
     age: 35,
     isDeveloper: true
 };
+main("Dolon");
 const roll = 45;
-console.log(person, roll);
-main("Dolon Chandra Roy");
+// typescript array typing 
+let a = [];
+a.push(5);
+a.push("Hello dolon!");
+console.log(a);
