@@ -10,10 +10,10 @@ const person = {
 // main("Dolon")
 const roll = 45;
 // typescript array typing 
-let a = [];
+let a = []; // this called union type.
 a.push(5);
 a.push("Hello dolon!");
-console.log(a);
+// console.log(a);
 // typescript object typing
 // let c: {
 //     name: string,
@@ -26,4 +26,9 @@ c = {
     age: 52,
     adult: false
 };
-console.log(c);
+// console.log(c);
+// typescript dynamically type
+let d; //rare to use in typescript
+d = "a;sldkfj";
+d = 6;
+console.log(d);

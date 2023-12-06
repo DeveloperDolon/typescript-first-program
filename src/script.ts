@@ -14,12 +14,12 @@ const roll: number = 45;
 
 // typescript array typing 
 
-let a: (number | string)[] = [];
+let a: (number | string)[] = []; // this called union type.
 
 a.push(5);
 a.push("Hello dolon!");
 
-console.log(a);
+// console.log(a);
 
 // typescript object typing
 
@@ -37,4 +37,14 @@ c = {
     adult: false
 }
 
-console.log(c);
+// console.log(c);
+
+
+// typescript dynamically type
+
+let d: any; //rare to use in typescript
+
+d = "a;sldkfj";
+d = 6;
+
+console.log(d); 
