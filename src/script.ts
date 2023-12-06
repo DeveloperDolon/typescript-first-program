@@ -52,4 +52,27 @@ d = 6;
 const myFunc = (a: string, b: string, c: string = "Bal"  ) => {
     console.log(`hello ${a} ${b} ${c}`);
 }
-myFunc("Dolon", "Akash", "Turna");
+// myFunc("Dolon", "Akash", "Turna");
+
+
+// typescript type aliases
+
+type stringOrNumber = string | number;
+type userType = {name: string; age: number};
+
+
+const userDetails = (id: stringOrNumber, user: userType) => {
+    console.log(`User id ${id}, name is ${user.name} and age is ${user.age}`);
+}
+
+const sayHello = (user: userType) => {
+    console.log(`Hello ${user.age > 50 ? "Sir:" : "Mr."} ${user.name}`);
+}
+
+const dolon = {
+    name: 'dolon',
+    age: 23
+}
+
+userDetails("464alskdfjoi4",dolon);
+sayHello(dolon);

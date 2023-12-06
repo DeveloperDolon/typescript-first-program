@@ -35,4 +35,15 @@ d = 6;
 const myFunc = (a, b, c = "Bal") => {
     console.log(`hello ${a} ${b} ${c}`);
 };
-myFunc("Dolon", "Akash", "Turna");
+const userDetails = (id, user) => {
+    console.log(`User id ${id}, name is ${user.name} and age is ${user.age}`);
+};
+const sayHello = (user) => {
+    console.log(`Hello ${user.age > 50 ? "Sir:" : "Mr."} ${user.name}`);
+};
+const dolon = {
+    name: 'dolon',
+    age: 23
+};
+userDetails("464alskdfjoi4", dolon);
+sayHello(dolon);
