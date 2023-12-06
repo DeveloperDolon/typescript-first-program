@@ -45,5 +45,20 @@ const dolon = {
     name: 'dolon',
     age: 23
 };
-userDetails("464alskdfjoi4", dolon);
-sayHello(dolon);
+// userDetails("464alskdfjoi4",dolon);
+// sayHello(dolon);
+// typescript function signatures 
+let add;
+add = (a, b, c) => {
+    if (c === "add") {
+        return a + b;
+    }
+    else {
+        return a - b;
+    }
+};
+let userInfos;
+userInfos = (id, userInfo) => {
+    return 4;
+};
+console.log(add(45, 34, "d"));
