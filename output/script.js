@@ -31,4 +31,8 @@ c = {
 let d; //rare to use in typescript
 d = "a;sldkfj";
 d = 6;
-console.log(d);
+// console.log(d); 
+const myFunc = (a, b, c = "Bal") => {
+    console.log(`hello ${a} ${b} ${c}`);
+};
+myFunc("Dolon", "Akash", "Turna");
