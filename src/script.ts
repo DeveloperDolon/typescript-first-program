@@ -103,4 +103,25 @@ userInfos = (id: number | string, userInfo: {
     return 4;
 }
 
-console.log(add(45, 34, "d"));
+// console.log(add(45, 34, "d"));
+
+// typescript class type
+
+class Player {
+    name: string;
+    age: number;
+    country: string;
+
+    constructor(name: string, age: number, country: string) {
+        this.name = name;
+        this.age = age;
+        this.country = country;
+    }
+
+    play() {
+        console.log(`${this.name} from ${this.country} is playing!`);
+    }
+}
+
+const dola = new Player("Dolon", 23, "Bangladesh");
+dola.play();
