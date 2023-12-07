@@ -176,3 +176,42 @@ drawRectangle(ThreeDOptions);
 let akash: IsPlayer;
 akash = new Person("Akash", 23, "Bangladesh" );
 akash.play();
+
+
+/// typescript generics learning
+const addID =<T extends {
+    name: string;
+    age: number;
+}> (obj: T) => {
+    let id = Math.floor(Math.random() * 100);
+
+    return {...obj, id};
+} 
+
+let user = addID({
+    name: "Dolon Chandra Roy",
+    age: 40,
+    country: "Bangladesh"
+});
+
+let userDolon = "Dolon Roy";
+
+// console.log(user);
+
+interface APIResponse <T> {
+    status: number;
+    type: string;
+    data: T;
+}
+
+const response1: APIResponse<object> = {
+    status: 200,
+    type: "Good Request",
+    data: {
+        name: "Test name",
+        something: 400
+    }
+}
+
+console.log(response1)
+
