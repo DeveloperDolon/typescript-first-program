@@ -1,4 +1,4 @@
-"use strict";
+import { Person } from "./classes/Player.js";
 const main = (param) => {
     console.log("Hello world!", param);
 };
@@ -88,4 +88,22 @@ class Player {
     }
 }
 const dola = new Player("Dolon", 23, "Bangladesh");
-dola.play();
+// dola.play();
+// typescript module learning
+const dolonr = new Person("Dolon Roy", 22, "Bangladesh");
+dolonr.play();
+const drawRectangle = (options) => {
+    let width = options.width;
+    let length = options.length;
+    console.log(width, length);
+};
+let ThreeDOptions = {
+    width: 30,
+    length: 40,
+    height: 50
+};
+drawRectangle(ThreeDOptions);
+// according to class
+let akash;
+akash = new Person("Akash", 23, "Bangladesh");
+akash.play();

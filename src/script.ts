@@ -1,4 +1,5 @@
-
+import {Person} from "./classes/Player.js";
+import {IsPlayer} from "./interfaces/isPlayer.js";
 
 const main = (param: string) => {
     console.log("Hello world!", param);
@@ -141,4 +142,37 @@ class Player {
 
 const dola = new Player("Dolon", 23, "Bangladesh");
 
-dola.play();
+// dola.play();
+
+
+// typescript module learning
+const dolonr = new Person("Dolon Roy", 22, "Bangladesh");
+dolonr.play();
+
+
+
+// typescript interfaces learning ..........
+// according to object
+interface RectangleOptions {
+    width: number;
+    length: number;
+}
+
+const drawRectangle = (options: RectangleOptions) => {
+    let width = options.width;
+    let length = options.length;
+    console.log(width, length);
+}
+
+let ThreeDOptions = {
+    width: 30,
+    length: 40,
+    height: 50
+}
+
+drawRectangle(ThreeDOptions);
+
+// according to class
+let akash: IsPlayer;
+akash = new Person("Akash", 23, "Bangladesh" );
+akash.play();
