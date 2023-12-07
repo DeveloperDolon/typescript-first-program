@@ -126,4 +126,19 @@ const response1 = {
         something: 400
     }
 };
-console.log(response1);
+// console.log(response1)
+// typescript enum types learning
+var ResponseTypes;
+(function (ResponseTypes) {
+    ResponseTypes[ResponseTypes["SUCCESS"] = 0] = "SUCCESS";
+    ResponseTypes[ResponseTypes["FAILURE"] = 1] = "FAILURE";
+    ResponseTypes[ResponseTypes["UNAUTHENTICATED"] = 2] = "UNAUTHENTICATED";
+    ResponseTypes[ResponseTypes["ERROR"] = 3] = "ERROR";
+})(ResponseTypes || (ResponseTypes = {}));
+;
+const response2 = {
+    status: 200,
+    type: ResponseTypes.UNAUTHENTICATED,
+    data: "test"
+};
+console.log(response2);

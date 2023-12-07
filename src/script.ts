@@ -213,5 +213,24 @@ const response1: APIResponse<object> = {
     }
 }
 
-console.log(response1)
+// console.log(response1)
 
+
+// typescript enum types learning
+enum ResponseTypes {
+    SUCCESS, FAILURE, UNAUTHENTICATED, ERROR
+};
+
+interface APIResponse2 <T> {
+    status: number;
+    type: ResponseTypes;
+    data: T;
+}
+
+const response2: APIResponse2<string> = {
+    status: 200,
+    type: ResponseTypes.UNAUTHENTICATED,
+    data: "test"
+}
+ 
+console.log(response2)
