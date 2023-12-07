@@ -107,16 +107,32 @@ userInfos = (id: number | string, userInfo: {
 
 // typescript class type
 
-class Player {
-    name: string;
-    age: number;
-    country: string;
+// class Player {
+//     private name: string;
+//     private age: number;
+//     readonly country: string;
 
-    constructor(name: string, age: number, country: string) {
-        this.name = name;
-        this.age = age;
-        this.country = country;
-    }
+//     constructor(name: string, age: number, country: string) {
+//         this.name = name;
+//         this.age = age;
+//         this.country = country;
+//     }
+
+//     play() {
+//         console.log(`${this.name} from ${this.country} is playing!`);
+//     }
+// }
+
+
+// access modifire typescript
+
+class Player {
+
+    constructor(
+        private name: string,
+        private age: number,
+        readonly country: string
+    ) {}
 
     play() {
         console.log(`${this.name} from ${this.country} is playing!`);
@@ -124,4 +140,5 @@ class Player {
 }
 
 const dola = new Player("Dolon", 23, "Bangladesh");
+
 dola.play();
