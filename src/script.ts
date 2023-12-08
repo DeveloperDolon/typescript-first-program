@@ -233,4 +233,13 @@ const response2: APIResponse2<string> = {
     data: "test"
 }
  
-console.log(response2)
+// console.log(response2)
+
+// typescript tuples learning.............
+let addb = [3, "hello", {p: 3}];
+
+a[0] = "false";
+
+let abb: [number, string, object] = [3, "Hello", {name: "Dolon"}];
+
+console.log(abb[1]);
